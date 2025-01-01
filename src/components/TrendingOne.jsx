@@ -11,7 +11,7 @@ const TrendingOne = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get("http://localhost:9000/category/categories"); // Replace with your actual API endpoint
+                const response = await axios.get("https://umair-ar-backend.vercel.app/category/categories"); // Replace with your actual API endpoint
                 setCategories(response.data.data || []); // Assuming the categories are in response.data.data
             } catch (error) {
                 console.error("Error fetching categories:", error);
@@ -24,7 +24,7 @@ const TrendingOne = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.post("http://localhost:9000/product/products/by-category", {
+                const response = await axios.post("https://umair-ar-backend.vercel.app/product/products/by-category", {
                     categoryId: activeCategory !== "all" ? activeCategory : null,
                 });
                 setProducts(response.data.data || []);

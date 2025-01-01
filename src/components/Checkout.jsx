@@ -11,7 +11,7 @@ const Checkout = () => {
     useEffect(() => {
         const fetchCartData = async () => {
             try {
-                const response = await fetch('http://localhost:9000/product/cart'); // Your cart API endpoint
+                const response = await fetch('https://umair-ar-backend.vercel.app/product/cart'); // Your cart API endpoint
                 const data = await response.json();
                 setCartItems(data.data.items);  // Assuming the API response has a cartItems array
                 const calculatedTotalPrice = data.data?.items.reduce((total, item) => total + item?.productId.price, 0);
@@ -36,7 +36,7 @@ const Checkout = () => {
     const handlePlaceOrder = async () => {
         try {
             const stripe = await stripePromise;
-            const response = await fetch("http://localhost:9000/product/create-checkout-session", {
+            const response = await fetch("https://umair-ar-backend.vercel.app/product/create-checkout-session", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -8,7 +8,7 @@ const CartSection = () => {
     useEffect(() => {
         const fetchCartData = async () => {
             try {
-                const response = await fetch('http://localhost:9000/product/cart');
+                const response = await fetch('https://umair-ar-backend.vercel.app/product/cart');
                 const data = await response.json();
                 if (data.success) {
                     setCart(data.data);  // Store the cart data in state
@@ -27,7 +27,7 @@ const CartSection = () => {
     const removeFromCart = async (productId) => {
         try {
             // Call the backend API to remove the product from the cart
-            const response = await fetch('http://localhost:9000/product/remove-from-cart', {
+            const response = await fetch('https://umair-ar-backend.vercel.app/product/remove-from-cart', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

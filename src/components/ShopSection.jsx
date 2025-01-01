@@ -11,7 +11,7 @@ const ShopSection = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios.get("http://localhost:9000/category/categories"); // Replace with your API endpoint
+                const response = await axios.get("https://umair-ar-backend.vercel.app/category/categories"); // Replace with your API endpoint
                 setCategories(response.data.data); // Assuming categories are in response.data.data
                 setLoading(false);
             } catch (error) {
@@ -25,7 +25,7 @@ const ShopSection = () => {
 
     const handleCategoryClick = async (categoryId) => {
         try {
-            const response = await axios.get(`http://localhost:9000/product/products/category/${categoryId}`);
+            const response = await axios.get(`https://umair-ar-backend.vercel.app/product/products/category/${categoryId}`);
             setProducts(response.data.data);
         } catch (error) {
             console.error("Error fetching products:", error);

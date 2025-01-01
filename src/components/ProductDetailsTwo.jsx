@@ -18,7 +18,7 @@ const ProductDetailsTwo = () => {
     useEffect(() => {
         const fetchProductDetails = async () => {
             try {
-                const response = await axios.get(`http://localhost:9000/product/product/${id}`);
+                const response = await axios.get(`https://umair-ar-backend.vercel.app/product/product/${id}`);
                 setProduct(response.data.data);
                 setMainImage(response.data.data.mainProductImage); // Set main image as the first image
                 setLoading(false);
@@ -58,7 +58,7 @@ const ProductDetailsTwo = () => {
     const addToCart = async () => {
         if (!product) return;
         try {
-            const response = await axios.post("http://localhost:9000/product/add-to-cart", {
+            const response = await axios.post("https://umair-ar-backend.vercel.app/product/add-to-cart", {
                 productId: product._id,
                 quantity: quantity,
             });
