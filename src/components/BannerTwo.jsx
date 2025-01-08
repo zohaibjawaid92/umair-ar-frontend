@@ -127,7 +127,7 @@ const BannerTwo = () => {
                                     <div className="banner-item-two__content">
                                         <span className="text-gray mb-8 h6">Starting at only $250</span>
                                         <h2 className="banner-item-two__title bounce text-gray">
-                                            Get The Sound You Love For Less
+                                            See It, Love It, Place It
                                         </h2>
                                         <Link
                                             to="/shop"
@@ -147,7 +147,7 @@ const BannerTwo = () => {
                                     <div className="banner-item-two__content">
                                         <span className="text-gray mb-8 h6">Starting at only $250</span>
                                         <h2 className="banner-item-two__title bounce text-gray">
-                                            Get The Sound You Love For Less
+                                            See It, Love It, Place It
                                         </h2>
                                         <Link
                                             to="/shop"

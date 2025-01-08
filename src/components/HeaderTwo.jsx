@@ -98,155 +98,20 @@ const HeaderTwo = ({ category }) => {
                 </button>
                 <div className="mobile-menu__inner">
                     <Link to="/" className="mobile-menu__logo">
-                        <img src="assets/images/logo/logo.png" alt="Logo" />
+                        <img src="assets/file5.png" alt="Logo" />
                     </Link>
                     <div className="mobile-menu__menu">
                         {/* Nav Menu Start */}
                         <ul className="nav-menu flex-align nav-menu--mobile">
-                            <li onClick={() => handleMenuClick(0)}
-                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 0 ? "d-block" : ""
-                                    }`}
-                            >
-                                <Link to="#" className="nav-menu__link">
+                            <li className="nav-menu__item">
+                                <Link to="/" className="nav-menu__link">
                                     Home
                                 </Link>
-                                <ul
-                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 0 ? "open" : ""
-                                        }`}
-                                >
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Home One
-                                        </Link>
-                                    </li>
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/index-two"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Home Two
-                                        </Link>
-                                    </li>
-                                </ul>
                             </li>
-                            <li onClick={() => handleMenuClick(1)}
-                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 1 ? "d-block" : ""
-                                    }`}
-                            >
-                                <Link to="#" className="nav-menu__link">
+                            <li className="nav-menu__item">
+                                <Link to="/shop" className="nav-menu__link">
                                     Shop
                                 </Link>
-                                <ul
-                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 1 ? "open" : ""
-                                        }`}
-                                >
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/shop"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Shop
-                                        </Link>
-                                    </li>
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/product-details"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Shop Details
-                                        </Link>
-                                    </li>
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/product-details-two"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Shop Details Two
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li onClick={() => handleMenuClick(2)}
-                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 2 ? "d-block" : ""
-                                    }`}
-                            >
-                                <span className="badge-notification bg-warning-600 text-white text-sm py-2 px-8 rounded-4">
-                                    New
-                                </span>
-                                <Link to="#" className="nav-menu__link">
-                                    Pages
-                                </Link>
-                                <ul
-                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 2 ? "open" : ""
-                                        }`}
-                                >
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/cart"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Cart
-                                        </Link>
-                                    </li>
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/checkout"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Checkout{" "}
-                                        </Link>
-                                    </li>
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/account"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Account
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li onClick={() => handleMenuClick(3)}
-                                className={`on-hover-item nav-menu__item has-submenu ${activeIndex === 3 ? "d-block" : ""
-                                    }`}
-                            >
-                                <Link to="#" className="nav-menu__link">
-                                    Blog
-                                </Link>
-                                <ul
-                                    className={`on-hover-dropdown common-dropdown nav-submenu scroll-sm ${activeIndex === 3 ? "open" : ""
-                                        }`}
-                                >
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/blog"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Blog
-                                        </Link>
-                                    </li>
-                                    <li className="common-dropdown__item nav-submenu__item">
-                                        <Link onClick={() => setActiveIndex(null)}
-                                            to="/blog-details"
-                                            className="common-dropdown__link nav-submenu__link hover-bg-neutral-100"
-                                        >
-                                            {" "}
-                                            Blog Details
-                                        </Link>
-                                    </li>
-                                </ul>
                             </li>
                             <li className="nav-menu__item">
                                 <Link to="/contact" className="nav-menu__link">
@@ -266,7 +131,7 @@ const HeaderTwo = ({ category }) => {
                         {/* Logo Start */}
                         <div className="logo">
                             <Link to="/" className="link">
-                                <img src="assets/file4.png" alt="Logo" />
+                                <img src="assets/file5.png" alt="Logo" />
                             </Link>
                         </div>
                         {/* Logo End  */}
@@ -522,7 +387,7 @@ const HeaderTwo = ({ category }) => {
                                         Profile
                                     </span>
                                 </Link> */}
-                                <Link
+                                {/* <Link
                                     to="/cart"
                                     className="flex-align flex-column gap-8 item-hover-two"
                                 >
@@ -535,7 +400,7 @@ const HeaderTwo = ({ category }) => {
                                     <span className="text-md text-white item-hover__text d-none d-lg-flex">
                                         Wishlist
                                     </span>
-                                </Link>
+                                </Link> */}
                                 {/* <Link
                                     to="/cart"
                                     className="flex-align flex-column gap-8 item-hover-two"
@@ -557,7 +422,7 @@ const HeaderTwo = ({ category }) => {
                                     <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
                                         <i className="ph ph-shopping-cart-simple" />
                                         <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
-                                            2
+                                            0
                                         </span>
                                     </span>
                                     <span className="text-md text-white item-hover__text d-none d-lg-flex">
@@ -576,7 +441,7 @@ const HeaderTwo = ({ category }) => {
                     <nav className="header-inner d-flex justify-content-between gap-8">
                         <div className="flex-align menu-category-wrapper">
                             {/* Category Dropdown Start */}
-                            <div className={`category-two ${category === false ? "d-block" : "d-none"} `}>
+                            {/* <div className={`category-two ${category === false ? "d-block" : "d-none"} `}>
                                 <button onClick={handleCategoryToggle}
                                     type="button"
                                     className="category__button flex-align gap-8 fw-medium bg-main-two-600 p-16 text-white"
@@ -691,8 +556,8 @@ const HeaderTwo = ({ category }) => {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div className={`category main  on-hover-item bg-main-600 text-white ${category === true ? "d-block" : "d-none"}`}>
+                            </div> */}
+                            {/* <div className={`category main  on-hover-item bg-main-600 text-white ${category === true ? "d-block" : "d-none"}`}>
                                 <button
                                     type="button"
                                     className="category__button flex-align gap-8 fw-medium p-16 border-end border-start border-gray-100 text-white"
@@ -990,7 +855,7 @@ const HeaderTwo = ({ category }) => {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* Category Dropdown End  */}
                             {/* Menu Start  */}
                             <div className="header-menu d-lg-block d-none">
@@ -1146,7 +1011,7 @@ const HeaderTwo = ({ category }) => {
                         </div>
                         {/* Header Right start */}
                         <div className="header-right flex-align">
-                            <div className="select-dropdown-for-home-two d-lg-block d-none">
+                            {/* <div className="select-dropdown-for-home-two d-lg-block d-none">
                                 <ul className="header-top__right style-two flex-align flex-wrap">
                                     <li className="on-hover-item border-right-item border-right-item-sm-space has-submenu arrow-white">
                                         <Link to="#" className="selected-text text-heading text-sm py-8">
@@ -1331,56 +1196,9 @@ const HeaderTwo = ({ category }) => {
                                         </ul>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                             <div className="me-8 d-lg-none d-block">
                                 <div className="header-two-activities flex-align flex-wrap gap-32">
-                                    <button onClick={handleSearchToggle}
-                                        type="button"
-                                        className="flex-align search-icon d-lg-none d-flex gap-4 item-hover-two"
-                                    >
-                                        <span className="text-2xl text-white d-flex position-relative item-hover__text">
-                                            <i className="ph ph-magnifying-glass" />
-                                        </span>
-                                    </button>
-                                    <Link
-                                        to="/account"
-                                        className="flex-align flex-column gap-8 item-hover-two"
-                                    >
-                                        <span className="text-2xl text-white d-flex position-relative item-hover__text">
-                                            <i className="ph ph-user" />
-                                        </span>
-                                        <span className="text-md text-white item-hover__text d-none d-lg-flex">
-                                            Profile
-                                        </span>
-                                    </Link>
-                                    <Link
-                                        to="/cart"
-                                        className="flex-align flex-column gap-8 item-hover-two"
-                                    >
-                                        <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
-                                            <i className="ph ph-heart" />
-                                            <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
-                                                2
-                                            </span>
-                                        </span>
-                                        <span className="text-md text-white item-hover__text d-none d-lg-flex">
-                                            Wishlist
-                                        </span>
-                                    </Link>
-                                    <Link
-                                        to="/cart"
-                                        className="flex-align flex-column gap-8 item-hover-two"
-                                    >
-                                        <span className="text-2xl text-white d-flex position-relative me-6 mt-6 item-hover__text">
-                                            <i className="ph-fill ph-shuffle" />
-                                            <span className="w-16 h-16 flex-center rounded-circle bg-main-two-600 text-white text-xs position-absolute top-n6 end-n4">
-                                                2
-                                            </span>
-                                        </span>
-                                        <span className="text-md text-white item-hover__text d-none d-lg-flex">
-                                            Compare
-                                        </span>
-                                    </Link>
                                     <Link
                                         to="/cart"
                                         className="flex-align flex-column gap-8 item-hover-two"

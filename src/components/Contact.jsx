@@ -95,7 +95,7 @@ const Contact = () => {
                                             type="submit"
                                             className="btn btn-main py-18 px-32 rounded-8"
                                         >
-                                            Get a Quote
+                                            Submit
                                         </button>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@ const Contact = () => {
                                     to="/mailto:support24@marketpro.com"
                                     className="text-md text-gray-900 hover-text-main-600"
                                 >
-                                    support24@marketpro.com
+                                    support24@snaphome.com
                                 </Link>
                             </div>
                             <div className="flex-align gap-16 mb-0">
@@ -132,30 +132,24 @@ const Contact = () => {
                                     <i className="ph-fill ph-map-pin" />
                                 </span>
                                 <span className="text-md text-gray-900 ">
-                                    789 Inner Lane, California, USA
+                                    789 Inner Lane, Karachi, Pakistan
                                 </span>
                             </div>
                         </div>
                         <div className="mt-24 flex-align flex-wrap gap-16">
-                            <Link
-                                to="#"
+                            <a
+                                href="https://wa.me/923472196195"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-neutral-600 hover-bg-main-600 rounded-8 p-10 px-16 flex-between flex-wrap gap-8 flex-grow-1"
                             >
-                                <span className="text-white fw-medium">Get Support On Call</span>
+                                <span className="text-white fw-medium">Chat on WhatsApp</span>
                                 <span className="w-36 h-36 bg-main-600 rounded-8 flex-center text-xl text-white">
-                                    <i className="ph ph-headset" />
+                                    <i className="ph ph-whatsapp-logo" />
                                 </span>
-                            </Link>
-                            <Link
-                                to="#"
-                                className="bg-neutral-600 hover-bg-main-600 rounded-8 p-10 px-16 flex-between flex-wrap gap-8 flex-grow-1"
-                            >
-                                <span className="text-white fw-medium">Get Direction</span>
-                                <span className="w-36 h-36 bg-main-600 rounded-8 flex-center text-xl text-white">
-                                    <i className="ph ph-map-pin" />
-                                </span>
-                            </Link>
+                            </a>
                         </div>
+
                     </div>
                 </div>
             </div>

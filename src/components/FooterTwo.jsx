@@ -10,7 +10,7 @@ const FooterTwo = () => {
                         <div className="footer-item__logo">
                             <Link to="/">
                                 {" "}
-                                <img src="assets/file4.png" alt="Logo" />
+                                <img src="assets/file5.png" alt="Logo" />
                             </Link>
                         </div>
                         <p className="mb-24">

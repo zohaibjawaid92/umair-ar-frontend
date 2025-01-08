@@ -86,7 +86,7 @@ const HomePageTwo = () => {
       {/* <ShippingTwo /> */}
 
       {/* NewsletterTwo */}
-      <NewsletterTwo />
+      {/* <NewsletterTwo /> */}
 
       {/* FooterTwo */}
       <FooterTwo />

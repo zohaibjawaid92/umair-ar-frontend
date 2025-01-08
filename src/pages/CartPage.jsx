@@ -41,7 +41,7 @@ const CartPage = () => {
       <FooterTwo />
 
       {/* BottomFooter */}
-      <BottomFooter />
+      {/* <BottomFooter /> */}
 
 
     </>

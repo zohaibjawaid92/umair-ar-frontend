@@ -36,7 +36,7 @@ const ContactPage = () => {
       <FooterTwo />
 
       {/* BottomFooter */}
-      <BottomFooter />
+      {/* <BottomFooter /> */}
     </>
   );
 };

@@ -95,7 +95,7 @@ const HomePageOne = () => {
       <FooterOne />
 
       {/* BottomFooter */}
-      <BottomFooter />
+      {/* <BottomFooter /> */}
 
 
     </>

@@ -49,7 +49,7 @@ const ProductDetailsPageOne = () => {
       <FooterOne />
 
       {/* BottomFooter */}
-      <BottomFooter />
+      {/* <BottomFooter /> */}
 
 
 

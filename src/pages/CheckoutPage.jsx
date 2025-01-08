@@ -41,7 +41,7 @@ const CheckoutPage = () => {
       <FooterTwo />
 
       {/* BottomFooter */}
-      <BottomFooter />
+      {/* <BottomFooter /> */}
 
 
     </>

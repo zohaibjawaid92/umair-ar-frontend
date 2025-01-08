@@ -4098,7 +4098,8 @@ input:focus-visible {
 }
 
 .bg-color-neutral {
-    background-color: var(--neutral) !important;
+    /* background-color: var(--neutral) !important; */
+    background-color: #617490 !important;
 }
 
 .container-lg {
